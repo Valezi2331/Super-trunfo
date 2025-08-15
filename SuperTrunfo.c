@@ -5,18 +5,18 @@ int main(){
 char estado1;
 char cod1[10];
 char cidade1[10];
-int populacao1;
+unsigned int populacao1;
 float area1;
 float pib1;
-int turistico1;
+unsigned int turistico1;
 
 char estado2;
 char cod2[10];
 char cidade2[50];
-int populacao2;
+unsigned int populacao2;
 float area2;
 float pib2;
-int turistico2;
+unsigned int turistico2;
 
 printf("Vamos introudzir os dados da carta 1\n");
 
@@ -82,6 +82,14 @@ pibcapita2= (pib2 / populacao2);
 
 
 
+int a = 1;
+float inversodensidade1 = a / densidade1;
+float inversodensidade2 = a / densidade2;
+float superpoder1 =(populacao1 + area1 + pib1 + turistico1 + pibcapita1 + inversodensidade1);
+float superpoder2 =(populacao2 + area2 + pib2 + turistico2 + pibcapita2 + inversodensidade2);
+
+
+
 printf("Informações da carta 1 \n");
 printf("Estado: %c \n", estado1);
 printf("Código: %s \n", cod1);
@@ -92,6 +100,7 @@ printf("PIB: %f \n", pib1);
 printf("Quantidade de pontos turísticos: %d \n", turistico1);
 printf("Densidade populacional: %f \n", densidade1);
 printf("Pib per Capita: %f \n ", pibcapita1);
+printf ("Super poder: %f \n ", superpoder1);
 printf("\n"); 
 
 printf("Informações da carta 2 \n");
@@ -104,5 +113,29 @@ printf("PIB: %f \n", pib2);
 printf("Quantidade de pontos turísticos: %d \n", turistico2);
 printf("Densidade populacional: %f \n", densidade2);
 printf("Pib per Capita: %f \n ", pibcapita2);
+printf ("Super poder: %f \n  \n \n", superpoder2);
+
+
+
+printf("População da carta 1 maior que carta 2: %d \n", populacao1 >= populacao2);
+printf("População da carta 2 maior que carta 1: %d \n", populacao2 >= populacao1);
+
+printf("Área da carta 1 maior que carta 2: %d \n", area1 >= area2);
+printf("Área da carta 2 maior que carta 1: %d \n", area1 >= area1);
+
+printf("PIB da carta 1 maior que carta 2: %d \n", pib1 >= pib2);
+printf("PIB da carta 2 maior que carta 1: %d \n", pib2 >= pib1);
+
+printf("Pontos turísticos da carta 1 maior que carta 2: %d \n", turistico1 >= turistico2);
+printf("Pontos turísticos da carta 2 maior que carta 1: %d \n", turistico2 >= turistico1);
+
+printf("Densidade da carta 1 menor que carta 2: %d \n", densidade1 <= densidade2);
+printf("Densidade da carta 2 menor que carta 1: %d \n", densidade2 <= densidade1);
+
+printf("PIB per capita da carta 1 maior que carta 2: %d \n", pibcapita1 >= pibcapita2);
+printf("PIB per capita da carta 2 maior que carta 1: %d \n", pibcapita2 >= pibcapita1);
+
+printf("Super-poder da carta 1 maior que carta 2: %d \n", superpoder1 >= superpoder2);
+printf("Super-poder da carta 1 maior que carta 2: %d \n", superpoder2 >= superpoder1);
 
 }
