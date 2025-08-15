@@ -3,16 +3,16 @@
 int main(){
 
 char estado1;
-char cod1;
-char cidade1;
+char cod1[10];
+char cidade1[10];
 int populacao1;
 float area1;
 float pib1;
 int turistico1;
 
 char estado2;
-char cod2;
-char cidade2;
+char cod2[10];
+char cidade2[50];
 int populacao2;
 float area2;
 float pib2;
@@ -21,13 +21,13 @@ int turistico2;
 printf("Vamos introudzir os dados da carta 1\n");
 
 printf("Insira o estado(A a H) \n");
-scanf("%c", &estado1);
+scanf(" %c", &estado1);
 
 printf("Insira o código da carta \n");
-scanf("%s", &cod1);
+scanf("%s", cod1);
 
 printf("Insira a cidade \n");
-scanf("%s", &cidade1);
+scanf("%s", cidade1);
 
 printf("Insira a população \n");
 scanf("%d", &populacao1);
@@ -44,13 +44,13 @@ scanf("%d", &turistico1);
 printf("Agora vamos fazer a carta 2 \n");
 
 printf("Insira o estado(A a H) \n");
-scanf("%s", &estado2);
+scanf(" %c", &estado2);
 
 printf("Insira o código da carta \n");
-scanf("%s", &cod2);
+scanf(" %s", cod2);
 
 printf("Insira a cidade \n");
-scanf("%s", &cidade2);
+scanf("%s", cidade2);
 
 printf("Insira a população \n");
 scanf("%d", &populacao2);
